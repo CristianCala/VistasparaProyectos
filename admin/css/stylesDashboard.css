@@ -1,7 +1,5 @@
 @import url('generalStyles.css');
 
-
-
 body {
     position: relative;
     margin: var(--header-ancho) 0 0 0;
@@ -20,8 +18,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-/*    background-color: var(--color-graystandar);
-*/    
     background-color:  var(--secondary-blue);
     z-index: 100;
     transition: .5s
@@ -33,17 +29,13 @@ body {
     cursor: pointer;
 }
 
-.header_img {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
+.dropdown-toggle::after {
+    display:none !important; 
 }
 
-.header_img img {
-    width: 40px;
+.dropdown-menu{
+    border-radius: 6px !important;
+    border: 1px !important;
 }
 
 .form-outline{
@@ -63,16 +55,21 @@ body {
     width: var(--nav-largo);
     height: 100vh;
     background-color: var(--main-color);
-    /*background-image: url('../img/cajaAzul.png');*/
-    /*background-size: 100% 100%;*/
-/*	box-shadow:  20px 20px 20px #d9d9d9;
-*/    padding: .5rem 1rem 0 0;
+    background-image: url('../img/OndaArriba.png');
+    background-size: 180% calc(var(--header-ancho) + 28rem);
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+    padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: 100;
 }
 
 .form-control{
     box-shadow: none !important;
+}
+
+.form-control:focus{
+    border: 2px solid var(--main-color) !important;
 }
 
 .nav {
@@ -132,8 +129,7 @@ body {
 }
 
 .height-100 {
-    height: 100vh;
-    margin-top: 5rem;
+    margin-top: 7rem;
     border-radius: 1rem ;
 }
 
@@ -148,15 +144,6 @@ body {
         padding: 0 2rem 0 calc(var(--nav-largo) + 2rem);
     }
 
-    .header_img {
-        width: 50px;
-        height: auto;
-    }
-
-    .header_img img {
-        width: 55px;
-    }
-
     .l-navbar {
         left: 0;
         padding: 1rem 1rem 0 0;
@@ -165,6 +152,8 @@ body {
 
     .show {
         width: calc(var(--nav-largo) + 156px);
+        background-size: 100% calc(var(--header-ancho) + 50rem);
+        background-position-x: 0px;
     }
 
     .body-pd {
@@ -173,12 +162,7 @@ body {
 
 }
 
-@media (min-width: 600px) and (max-width: 1800px){
-
-
-}
-
-@media (max-width: 600px) {
+@media (max-width: 765px) {
   #img-mayor {
     display: none !important;
   }
@@ -186,9 +170,15 @@ body {
     display:  block !important;
   }
 
+  .show{
+    background-size: 170% calc(var(--header-ancho) + 23rem);
+  }
 }
 
 .invisibilidad{
     display: none !important;
 }
 
+.nav-enlace{
+    background-color: transparent !important;
+}
