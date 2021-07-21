@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+:root {
+	/*Paleta de colores*/
+	--dark-main: #110C28;
+	--primary-main: #5A45EA;
+	--secondary-main: #F13190;
+	--light-main: #A4AEFF;
+	--deeplight-main: #E0DADA;
+}
+
+body{
+	font-family: 'Mukta' !important;
+	background: url('../img/fondo.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: auto;
+	/*text-align: center;*/
+	background-attachment: fixed;
+	/*overflow: hidden;*/
+}
+
+::selection{
+	background-color: var(--light-main);
+	color: white;
+}
+
+.card{
+  border: none !important;
+}
+
+.bg-primary-main{
+	background-color: var(--primary-main) !important;
+}
+
+.bg-secondary-main{
+	background-color: var(--secondary-main) !important;
+}
+
+.bg-light-main{
+	background-color: var(--light-main) !important;
+}
+
+.bg-deeplight-main{
+	background-color: var(--deeplight-main) !important;
+}
+
+.tamaño-form{
+	width: 50rem !important;
+}
+/*color de texto*/
+.text-color-primary{
+	color: var(--primary-main) !important;
+}
+
+.text-color-secondary{
+	color: var(--secondary-main) !important;
+}
+
+/*botones personalizados*/
+.btn:focus{
+	box-shadow: none !important;
+}
+.btn-color-secondary{
+	background-color: var(--secondary-main) !important;
+}
+
+.btn-color-secondary:hover{
+	background-color: white !important;
+	border: 2px solid var(--secondary-main) !important;
+	color: var(--secondary-main) !important;
+}
+
+.btn-secondary-reverse{
+	background-color: white !important;
+	color: var(--secondary-main) !important;
+}
+
+.btn-secondary-reverse:hover{
+	background-color: var(--secondary-main) !important;
+	border: 2px solid white !important;
+	color: white !important;
+}
+
+input:focus{
+    outline:none !important;
+} 
+

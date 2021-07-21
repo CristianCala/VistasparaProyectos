@@ -1,0 +1,59 @@
+@import url('styles.css');
+
+
+body{
+	background: #F8F9FB !important;
+  min-height: 100vh;
+}
+
+.side-navbar {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: var(--primary-main);
+  transition: 0.5s;
+  left: 20px;
+  top: 20px;
+  border-radius: 16px;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+  margin-left: 180px;
+}
+
+#menu-btn {
+  background-color: var(--primary-main);
+  color: #fff;
+  margin-left: -52px;
+  position: fixed;
+  border-radius: 50%;
+}
+
+.my-container input {
+  border-radius: 2rem;
+  padding: 3px 20px;
+}
+
+@media (min-width: 1px) and (max-width: 1050px){
+
+.welcome{
+  margin-left: 2rem !important;
+}
+
+}
