@@ -13,9 +13,6 @@ body{
   margin-left: -300px;
   background-color: var(--primary-main);
   transition: 0.5s;
-  left: 20px;
-  top: 20px;
-  border-radius: 16px;
 }
 
 .nav-link:active,
@@ -37,23 +34,16 @@ body{
   margin-left: 180px;
 }
 
-#menu-btn {
-  background-color: var(--primary-main);
-  color: #fff;
-  margin-left: -52px;
-  position: fixed;
-  border-radius: 50%;
-}
-
 .my-container input {
   border-radius: 2rem;
   padding: 3px 20px;
 }
 
-@media (min-width: 1px) and (max-width: 1050px){
-
-.welcome{
-  margin-left: 2rem !important;
+.dropdown-item:hover{
+  border-left: 4px solid var(--secondary-main);
+  color: var(--secondary-main) !important;
 }
 
+.dropdown-item:focus{
+  background-color: var(--light-main);
 }

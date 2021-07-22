@@ -8,3 +8,19 @@ menu_btn.addEventListener("click", () => {
    sidebar.classList.toggle("active-nav");
    container.classList.toggle("active-cont");
 });
+
+// Tiempo
+function showTime() {
+
+   var time = new Date().toLocaleTimeString();
+   var timeInt = parseInt(time);
+   if (timeInt > 12){
+      document.getElementById('time').innerHTML= time + " PM";
+   }
+   else if (timeInt < 12){
+      document.getElementById('time').innerHTML= time + " AM";
+   }
+
+}
+showTime();
+setInterval(showTime, 1000);

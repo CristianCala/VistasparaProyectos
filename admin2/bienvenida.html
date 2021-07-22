@@ -13,9 +13,41 @@
 		<link rel="stylesheet" href="css/styles_menu.css">
 	</head>
 	<body>
-<!-- 		<div>
-			<img src="img/mppci.jpg" alt="Ministerio de Comunicación e información">
+		<!-- 		<div>
+				<img src="img/mppci.jpg" alt="Ministerio de Comunicación e información">
 		</div> -->
+		<div class="navbar sticky-top bg-light-main">
+			<div class="container-fluid mx-3">
+				<a class="nav-link btn" id="menu-btn">
+					<i class="fas fa-bars fa-2x text-white"></i>
+				</a>
+				<a class="nav-item text-white fw-bolder pt-2">
+					<h4 id="time"></h4>
+				</a>
+				<div class="nav-item">
+					<div class="dropdown">
+						<button type="button" class="btn dropdown-toggle text-white" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						Configuración
+						</button>
+						<ul class="dropdown-menu mt-2 without-border" aria-labelledby="dropdownMenuOffset">
+							<li>
+								<a class="dropdown-item" href="#">
+									<i class="fas fa-user mx-2"></i>Perfil
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">
+									<i class="fas fa-cog mx-2"></i>Configuración</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">
+									<i class="fas fa-sign-out-alt mx-2"></i>Cerrar Sesión</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<nav class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
 			<ul class="nav flex-column text-white w-100">
 				<a href="#" class="nav-link h3 text-white my-2">
@@ -42,9 +74,9 @@
 		</nav>
 		<div class="p-1 my-container active-cont">
 			<!-- Botón Slide -->
-			<div class="ps-5 mt-5">
-				<a class="btn" id="menu-btn"><i class="fas fa-bars text-white"></i></a>
-			</div>
+			<!-- 			<div class="ps-5 mt-5">
+					<a class="btn" id="menu-btn"><i class="fas fa-bars text-white"></i></a>
+			</div> -->
 			<div class="m-0 vh-100 row justify-content-center align-items-center">
 				<div class="card p-2 tamaño-form bg-light-main shadow-lg welcome">
 					<div class="text-center p-5">
