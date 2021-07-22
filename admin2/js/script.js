@@ -24,3 +24,17 @@ function showTime() {
 }
 showTime();
 setInterval(showTime, 1000);
+
+// Selección dashboard
+
+// Funcion focus link
+const colorEnlace = document.querySelectorAll('.list');
+
+function colorLink(){
+   if(colorEnlace){
+      // por cada <I> activa o desactiva la clase lin_active
+      colorEnlace.forEach(l=> l.classList.remove('active'))
+      this.classList.add('active');
+   }
+}
+colorEnlace.forEach(I => I.addEventListener('click', colorLink));

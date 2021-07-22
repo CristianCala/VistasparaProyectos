@@ -47,3 +47,25 @@ body{
 .dropdown-item:focus{
   background-color: var(--light-main);
 }
+
+.bg-image{
+  background: url("../img/navbar-onda.svg") left;
+  background-repeat: no-repeat;
+}
+
+.active{
+  background: white;
+  margin-left: 1rem;
+  border-radius: 16px 0 0 16px;
+}
+
+.nav-item:focus:active{
+    color: var(--secondary-main) !important;
+}
+.nav-link:focus{
+  background-color: transparent !important;
+}
+.nav-link:active{
+  background-color: transparent !important;
+}
+

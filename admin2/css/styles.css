@@ -69,6 +69,10 @@ a{
 	color: var(--secondary-main) !important;
 }
 
+.text-color-white{
+	color: white;
+}
+
 /*botones personalizados*/
 .btn:focus{
 	box-shadow: none !important;
