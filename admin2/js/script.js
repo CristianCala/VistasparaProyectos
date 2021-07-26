@@ -7,7 +7,29 @@ var container = document.querySelector(".my-container");
 menu_btn.addEventListener("click", () => {
    sidebar.classList.toggle("active-nav");
    container.classList.toggle("active-cont");
+   moverContenido();
 });
+
+
+
+function moverContenido(){
+   let opcion_1 = sidebar.querySelector('li').classList.toggle("margin-opcion");
+   let a =  sidebar.querySelector('#texto-1').classList.toggle('texto-ind');
+   let b =  sidebar.querySelector('#icon-1').classList.toggle('fa-x2');
+}
+
+
+
+// var menu_btn = document.querySelector("#menu-btn");
+
+// var sidebar = document.querySelector("#sidebar");
+
+// var container = document.querySelector(".my-container");
+
+// menu_btn.addEventListener("click", () => {
+//    sidebar.classList.toggle("active-nav");
+//    container.classList.toggle("active-cont");
+// });
 
 // Tiempo
 function showTime() {
@@ -32,9 +54,10 @@ const colorEnlace = document.querySelectorAll('.list');
 
 function colorLink(){
    if(colorEnlace){
-      // por cada <I> activa o desactiva la clase lin_active
-      colorEnlace.forEach(l=> l.classList.remove('active'))
+      // por cada <I> activa o desactiva la clase link_active
+      colorEnlace.forEach(a=> a.classList.remove('active'))
       this.classList.add('active');
    }
+
 }
-colorEnlace.forEach(I => I.addEventListener('click', colorLink));
+colorEnlace.forEach(a => a.addEventListener('click', colorLink));

@@ -15,12 +15,6 @@ body{
   transition: 0.5s;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-  background-color: #ffffff26;
-}
-
 .my-container {
   transition: 0.4s;
 }
@@ -54,20 +48,16 @@ body{
 }
 
 .active{
-  background: white;
+  background: #F8F9FB;
   margin-left: 1rem;
   border-radius: 16px 0 0 16px;
+  color: var(--primary-main) !important;
 }
 
-.nav-item:focus:active{
-    color: var(--secondary-main) !important;
-}
-.nav-link:focus
 .nav-link:active{
-  background-color: transparent !important;
+    background-color: transparent !important;
+    color: var(--primary-main);
 }
-
-
 
 
 @media(min-width:768px) {
@@ -81,4 +71,14 @@ body{
     margin-left: -300px;
   }
 
+}
+
+.margin-opcion{
+  transform: translateX(7.5rem);
+  transition: all 0.5s;
+}
+
+.texto-ind{
+  transform: translateX(-120vh);
+  transition: all 2s;
 }
