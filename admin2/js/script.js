@@ -37,19 +37,6 @@ function moveContent(){
    sidebar.querySelector('#icon5').classList.toggle('mx-2');
 }
 
-
-
-// var menu_btn = document.querySelector("#menu-btn");
-
-// var sidebar = document.querySelector("#sidebar");
-
-// var container = document.querySelector(".my-container");
-
-// menu_btn.addEventListener("click", () => {
-//    sidebar.classList.toggle("active-nav");
-//    container.classList.toggle("active-cont");
-// });
-
 // Tiempo
 function showTime() {
 
@@ -67,8 +54,6 @@ showTime();
 setInterval(showTime, 1000);
 
 // Selección dashboard
-
-// Funcion focus link
 const colorEnlace = document.querySelectorAll('.list');
 
 function colorLink(){

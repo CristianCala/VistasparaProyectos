@@ -45,12 +45,6 @@ p{
 .dropdown-item:focus{
   background-color: var(--light-main);
 }
-
-.bg-image{
-  background: url("../img/navbar-onda.svg") left;
-  background-repeat: no-repeat;
-}
-
 .active{
   background: #F8F9FB;
   margin-left: 1rem;
@@ -84,15 +78,34 @@ p{
 }
 
 
-@media(min-width:768px) {
-
-}
-
-
 @media(max-width:768px) {
 
   .side-navbar{
-    margin-left: -300px;
+    margin-left: -120px;
+  }
+
+  .nav-item{
+    transform: translateX(5.8rem);
+    padding: .5rem;
+    margin-left: 1rem;
+    width: 5.3rem;
+    transition: all 0.5s;
+  }
+
+  .nav-item a{
+    border-radius: 8px;
+  }
+
+  #brand img{
+    display: none;
+  }
+
+  .nav-link p{
+    display: none !important;
+  }
+
+  .active-cont {
+    margin-left: 70px;
   }
 
 }
