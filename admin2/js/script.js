@@ -43,10 +43,10 @@ function showTime() {
    var time = new Date().toLocaleTimeString();
    var timeInt = parseInt(time);
    if (timeInt > 12){
-      document.getElementById('time').innerHTML= time + " PM";
+      document.getElementById('time').innerHTML= time;
    }
    else if (timeInt < 12){
-      document.getElementById('time').innerHTML= time + " AM";
+      document.getElementById('time').innerHTML= time;
    }
 
 }

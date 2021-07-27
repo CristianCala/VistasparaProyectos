@@ -20,7 +20,7 @@
 
 .line-charger{
     overflow: hidden;
-    width: 20%;
+    width: 15%;
     height: 5px;
     background-color: #B3E5FC;
 }
@@ -35,7 +35,7 @@
     content: '';
     position: absolute;
     height: 100%;
-    width: 20%;
+    width: 15%;
     background-color: var(--secondary-blue);
     animation: indeterminate_first 1s infinite ease-out;
 }
@@ -45,7 +45,7 @@
         left: 0%;
     }
     50%{
-    	left: 80%;
+    	left: 85%;
     }
     100% {
         left: 0%;

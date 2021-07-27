@@ -109,3 +109,9 @@ p{
   }
 
 }
+
+.navbar .nav-item{
+
+  transform: none !important;
+  width: none !important;
+}
