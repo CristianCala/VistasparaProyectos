@@ -75,6 +75,10 @@ p{
   border-radius: 8px;
 }
 
+.mover-brand{
+  display: none;
+}
+
 .hidden{
   display: none !important;
 }
