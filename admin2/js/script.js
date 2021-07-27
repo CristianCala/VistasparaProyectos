@@ -7,15 +7,31 @@ var container = document.querySelector(".my-container");
 menu_btn.addEventListener("click", () => {
    sidebar.classList.toggle("active-nav");
    container.classList.toggle("active-cont");
-   moverContenido();
+   moveContent();
 });
 
 
 
-function moverContenido(){
-   let opcion_1 = sidebar.querySelector('li').classList.toggle("margin-opcion");
-   let a =  sidebar.querySelector('#texto-1').classList.toggle('texto-ind');
-   let b =  sidebar.querySelector('#icon-1').classList.toggle('fa-x2');
+function moveContent(){
+   sidebar.querySelector('#lista').classList.toggle("mover-items");
+   sidebar.querySelector('#text-hidden').classList.toggle('hidden');
+   sidebar.querySelector('#icon').classList.toggle('mx-2');
+
+   sidebar.querySelector('#lista2').classList.toggle("mover-items");
+   sidebar.querySelector('#text-hidden2').classList.toggle('hidden');
+   sidebar.querySelector('#icon2').classList.toggle('mx-2');
+
+   sidebar.querySelector('#lista3').classList.toggle("mover-items");
+   sidebar.querySelector('#text-hidden3').classList.toggle('hidden');
+   sidebar.querySelector('#icon3').classList.toggle('mx-2');
+
+   sidebar.querySelector('#lista4').classList.toggle("mover-items");
+   sidebar.querySelector('#text-hidden4').classList.toggle('hidden');
+   sidebar.querySelector('#icon4').classList.toggle('mx-2');
+
+   sidebar.querySelector('#lista5').classList.toggle("mover-items");
+   sidebar.querySelector('#text-hidden5').classList.toggle('hidden');
+   sidebar.querySelector('#icon5').classList.toggle('mx-2');
 }
 
 
