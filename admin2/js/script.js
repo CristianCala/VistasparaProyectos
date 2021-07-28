@@ -16,25 +16,9 @@ menu_btn.addEventListener("click", () => {
 
 
 function moveContent(){
-   sidebar.querySelector('#lista').classList.toggle("mover-items");
-   sidebar.querySelector('#text-hidden').classList.toggle('hidden');
-   sidebar.querySelector('#icon').classList.toggle('mx-2');
 
-   sidebar.querySelector('#lista2').classList.toggle("mover-items");
-   sidebar.querySelector('#text-hidden2').classList.toggle('hidden');
-   sidebar.querySelector('#icon2').classList.toggle('mx-2');
-
-   sidebar.querySelector('#lista3').classList.toggle("mover-items");
-   sidebar.querySelector('#text-hidden3').classList.toggle('hidden');
-   sidebar.querySelector('#icon3').classList.toggle('mx-2');
-
-   sidebar.querySelector('#lista4').classList.toggle("mover-items");
-   sidebar.querySelector('#text-hidden4').classList.toggle('hidden');
-   sidebar.querySelector('#icon4').classList.toggle('mx-2');
-
-   sidebar.querySelector('#lista5').classList.toggle("mover-items");
-   sidebar.querySelector('#text-hidden5').classList.toggle('hidden');
-   sidebar.querySelector('#icon5').classList.toggle('mx-2');
+   sidebar.querySelectorAll('.nav-item').forEach(elemt => elemt.classList.toggle("mover-items"));
+   sidebar.querySelectorAll('.text-hidden').forEach(elemt => elemt.classList.toggle("hidden"));
 }
 
 // Tiempo
@@ -43,10 +27,10 @@ function showTime() {
    var time = new Date().toLocaleTimeString();
    var timeInt = parseInt(time);
    if (timeInt > 12){
-      document.getElementById('time').innerHTML= time;
+      document.getElementById('time').innerHTML= time + " pm";
    }
    else if (timeInt < 12){
-      document.getElementById('time').innerHTML= time;
+      document.getElementById('time').innerHTML= time + " am";
    }
 
 }
