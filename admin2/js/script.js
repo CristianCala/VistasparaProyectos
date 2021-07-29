@@ -14,7 +14,6 @@ menu_btn.addEventListener("click", () => {
 });
 
 
-
 function moveContent(){
 
    sidebar.querySelectorAll('.nav-item').forEach(elemt => elemt.classList.toggle("mover-items"));
@@ -27,10 +26,10 @@ function showTime() {
    var time = new Date().toLocaleTimeString();
    var timeInt = parseInt(time);
    if (timeInt > 12){
-      document.getElementById('time').innerHTML= time + " pm";
+      document.getElementById('time').innerHTML= time;
    }
    else if (timeInt < 12){
-      document.getElementById('time').innerHTML= time + " am";
+      document.getElementById('time').innerHTML= time;
    }
 
 }

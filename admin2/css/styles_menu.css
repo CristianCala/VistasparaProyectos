@@ -47,7 +47,7 @@ p{
 }
 .active{
   background: #F8F9FB;
-  margin-left: 1rem;
+  margin-left: .5rem;
   border-radius: 16px 0 0 16px;
   color: var(--primary-main) !important;
 }
@@ -92,6 +92,10 @@ p{
     transition: all 0.5s;
   }
 
+  .active-nav {
+    margin-left: -300px;
+  }
+
   .nav-item a{
     border-radius: 8px;
   }
@@ -105,13 +109,16 @@ p{
   }
 
   .active-cont {
+    margin-left: 0 !important;
+  }
+
+  .active-cont-movil{
     margin-left: 70px;
   }
 
 }
 
 .navbar .nav-item{
-
   transform: none !important;
   width: none !important;
 }
