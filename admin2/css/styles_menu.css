@@ -45,16 +45,37 @@ p{
 .dropdown-item:focus{
   background-color: var(--light-main);
 }
+
 .active{
-  background: #F8F9FB;
+  background: #F8F9FB !important;
   margin-left: .5rem;
   border-radius: 16px 0 0 16px;
   color: var(--primary-main) !important;
 }
 
+
 .nav-link:active{
-    background-color: transparent !important;
-    color: var(--primary-main);
+  background-color: transparent !important;
+  color: var(--primary-main);
+}
+
+.accordion-button{
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+
+  border-color: none;
+  box-shadow: none;
+
 }
 
 .mover-items{
