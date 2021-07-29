@@ -32,6 +32,10 @@ function showTime() {
       document.getElementById('time').innerHTML= time;
    }
 
+   else if (timeInt == 3){
+      alert("Son las 3");
+   }
+
 }
 showTime();
 setInterval(showTime, 1000);
