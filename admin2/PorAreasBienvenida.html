@@ -62,35 +62,41 @@
 						<p class="text-hidden">Agregar</p>
 					</a>
 				</div>
-				<div class="nav-item mt-4 mb-2 dropend">
-					<a href="#" class="text-white fs-6 nav-link list d-flex " data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="fas fa-chart-line fa-lg mx-2" ></i>
+				<div>
+					<button class="accordion-button list" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<i class="fas fa-chart-line fa-lg mx-2"></i>
 						<p class="text-hidden">Estadísticas</p>
-					</a>
-					<ul class="dropdown-menu without-border">
-						<a class="dropdown-item" href="#">Por Áreas</a>
-						<a class="dropdown-item" href="#">General</a>
-					</ul>
+					</button>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body bg-light">
+							<a href="#" class="d-block">Por Áreas</a>
+							<a href="#" class="d-block">General</a>
+						</div>
+					</div>
 				</div>
-				<div class="nav-item mt-4 mb-2 dropend">
-					<a href="#" class="text-white fs-6 nav-link list d-flex " data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="fas fa-bullhorn fa-lg mx-2" ></i>
+				<div>
+					<button class="accordion-button list" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<i class="fas fa-bullhorn fa-lg mx-2"></i>
 						<p class="text-hidden">Reportes</p>
-					</a>
-					<ul class="dropdown-menu without-border">
-						<a class="dropdown-item" href="#">Crear Reportes</a>
-						<a class="dropdown-item" href="#">Ver Reportes</a>
-					</ul>
+					</button>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body bg-light">
+							<a href="#" class="d-block">Crear Reportes</a>
+							<a href="#" class="d-block">Ver Reportes</a>
+						</div>
+					</div>
 				</div>
-				<div class="nav-item mt-4 mb-2 dropend">
-					<a href="#" class="text-white fs-6 nav-link list d-flex " data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="fas fa-list fa-lg mx-2" ></i>
+				<div>
+					<button class="accordion-button list" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						<i class="fas fa-list fa-lg mx-2"></i>
 						<p class="text-hidden">Listados</p>
-					</a>
-					<ul class="dropdown-menu without-border">
-						<a class="dropdown-item" href="#">Vigilantes</a>
-						<a class="dropdown-item" href="#">Visitantes</a>
-					</ul>
+					</button>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						<div class="accordion-body bg-light">
+							<a href="#" class="d-block">Vigilantes</a>
+							<a href="#" class="d-block">Visitantes</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -100,9 +106,7 @@
 			<div class="m-0 vh-100 row justify-content-center align-items-center">
 				<div class="card p-2 tamaño-form shadow-lg">
 					<div class="text-center p-5">
-						<img src="img/logoViveMorado.svg" width="150" height="150" alt="Vive Evoluciona">
-						<p class="fs-4 text-color-primary" id="time"></p>
-						<h1 class="fw-bolder text-center text-color-primary mt-4">BIENVENIDO</h1>
+						
 					</div>
 				</div>
 			</div>
