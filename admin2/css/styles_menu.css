@@ -46,7 +46,7 @@ p{
   background-color: var(--light-main);
 }
 
-.active{
+.activar{
   background: #F8F9FB !important;
   margin-left: .5rem;
   border-radius: 16px 0 0 16px;
@@ -142,4 +142,19 @@ p{
 .navbar .nav-item{
   transform: none !important;
   width: none !important;
+}
+
+.active{
+  background-color:  var(--light-main) !important;
+  border-radius: 0 0 16px 16px !important;
+  /*border-bottom: 2px solid var(--primary-main) !important;*/
+}
+
+.nav-tabs .nav-link{
+  border: 0 !important;
+}
+
+.tabulador{
+  border-radius: 16px 16px 0 0 !important;
+  border-bottom: 2px solid var(--primary-main) !important;
 }

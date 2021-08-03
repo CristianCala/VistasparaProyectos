@@ -98,3 +98,6 @@ input:focus{
     outline:none !important;
 } 
 
+.z-index{
+	z-index: 10;
+}

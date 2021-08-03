@@ -20,25 +20,6 @@ function moveContent(){
    sidebar.querySelectorAll('.text-hidden').forEach(elemt => elemt.classList.toggle("hidden"));
 }
 
-// Tiempo
-function showTime() {
-
-   var time = new Date().toLocaleTimeString();
-   var timeInt = parseInt(time);
-   if (timeInt > 12){
-      document.getElementById('time').innerHTML= time;
-   }
-   else if (timeInt < 12){
-      document.getElementById('time').innerHTML= time;
-   }
-
-   else if (timeInt == 3){
-      alert("Son las 3");
-   }
-
-}
-showTime();
-setInterval(showTime, 1000);
 
 // Selección dashboard
 const colorEnlace = document.querySelectorAll('.list');
@@ -46,8 +27,8 @@ const colorEnlace = document.querySelectorAll('.list');
 function colorLink(){
    if(colorEnlace){
       // por cada <I> activa o desactiva la clase link_active
-      colorEnlace.forEach(a=> a.classList.remove('active'))
-      this.classList.add('active');
+      colorEnlace.forEach(a=> a.classList.remove('activar'))
+      this.classList.add('activar');
    }
 
 }
