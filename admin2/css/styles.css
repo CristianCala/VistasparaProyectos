@@ -31,7 +31,7 @@ body{
 
 .card{
   border: none !important;
-  z-index: -1;
+  z-index: 1 !important;
 }
 
 a{
@@ -98,6 +98,10 @@ a{
 input:focus{
     outline:none !important;
 } 
+
+.form-control:focus{
+	 box-shadow: none !important;
+}
 
 .z-index{
 	z-index: 10;

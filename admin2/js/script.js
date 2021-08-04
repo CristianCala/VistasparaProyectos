@@ -33,3 +33,14 @@ function colorLink(){
 
 }
 colorEnlace.forEach(a => a.addEventListener('click', colorLink));
+
+
+// Para desocultar contraseña
+function showPass() {
+  var checker = document.getElementById("contraseña");
+  if (checker.type === "password") {
+    checker.type = "text";
+  } else {
+    checker.type = "password";
+  }
+}
