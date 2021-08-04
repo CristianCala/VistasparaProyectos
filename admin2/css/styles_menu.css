@@ -147,7 +147,6 @@ p{
 .active{
   background-color:  var(--light-main) !important;
   border-radius: 0 0 16px 16px !important;
-  /*border-bottom: 2px solid var(--primary-main) !important;*/
 }
 
 .nav-tabs .nav-link{

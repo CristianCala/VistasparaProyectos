@@ -31,6 +31,7 @@ body{
 
 .card{
   border: none !important;
+  z-index: -1;
 }
 
 a{
@@ -100,4 +101,8 @@ input:focus{
 
 .z-index{
 	z-index: 10;
+}
+
+.shadow{
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
