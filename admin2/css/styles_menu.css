@@ -1,6 +1,5 @@
 @import url('styles.css');
 
-
 body{
 	background: #F8F9FB !important;
   min-height: 100vh;
@@ -159,12 +158,16 @@ p{
 }
 
 .input-control{
-  border-radius: 0 8px 8px 0 !important;
+  border-radius: 8px !important;
   color: var(--secondary-main) !important;
+  background-color: #EFF0F1;
+  border: 2px solid var(--primary-main);
+
 }
 
 .input-control:focus{
   border: 2px solid var(--secondary-main);
+  background-color: #EFF0F1;
 }
 
 .form-check-input:checked {

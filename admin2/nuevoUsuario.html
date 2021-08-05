@@ -98,40 +98,40 @@
 		<div class="p-1 my-container active-cont active-cont-movil">
 			<div class="m-0 row justify-content-center align-items-center">
 				<div class="card p-2 tamaño-form shadow-lg mt-5">
-					<div class="text-center p-5">
-						<h1 class="text-center text-color-primary fw-bold">Registrar Usuario</h1>
+					<div class="p-5">
+						<h1 class="text-color-primary fw-bold text-center">Registrar Usuario</h1>
 						<form class="container mt-4">
-							<div class="input-group mb-3">
-								<span class="input-group-text"><i class="fas fa-user fa-lg text-color-secondary"></i></span>
-								<input type="text" class="form-control input-control" id="nombre" placeholder="Nombre" aria-label="Username">
+							<div class="mb-3">
+								<label for="nombre" class="form-label fw-bold">Nombre</label>
+								<input type="text" class="form-control input-control" id="nombre" required>
 							</div>
-							<div class="input-group mb-3">
-								<span class="input-group-text"><i class="fas fa-user-tag fa-lg text-color-secondary"></i></span>
-								<input type="text" class="form-control input-control" id="apellido" placeholder="Apellido" aria-label="Username">
+							<div class="mb-3">
+								<label for="apellido" class="form-label fw-bold">Apellido</label>
+								<input type="text" class="form-control input-control" id="apellido" required>
 							</div>
-							<div class="input-group mb-3">
-								<span class="input-group-text"><i class="fas fa-id-card fa-lg text-color-secondary"></i></span>
-								<input type="number" class="form-control input-control" id="cedula" placeholder="Cédula" aria-label="Username">
+							<div class="mb-3">
+								<label for="cedula" class="form-label fw-bold">Cédula</label>
+								<input type="number" max="999999999" class="form-control input-control" id="cedula" required>
 							</div>
-							<div class="input-group mb-3">
-								<span class="input-group-text"><i class="fas fa-user-edit fa-lg text-color-secondary"></i></span>
-								<input type="text" class="form-control input-control" id="nombreUsuario" placeholder="Nombre Usuario" aria-label="Username">
+							<div class="mb-3">
+								<label for="nombreUsuario" class="form-label fw-bold">Nombre de Usuario</label>
+								<input type="text" class="form-control input-control" id="nombreUsuario" required>
 							</div>
-							<div class="input-group">
-								<span class="input-group-text"><i class="fas fa-lock fa-lg text-color-secondary"></i></span>
-								<input type="password" class="form-control input-control" id="contraseña" placeholder="Contraseña" aria-label="Username">
+							<div class="mb-3">
+								<label for="e-mail" class="form-label fw-bold">E-mail</label>
+								<input type="email" class="form-control input-control" id="e-mail" required>
 							</div>
-							<div class="text-start mb-3 mt-1">
-							  <input class="form-check-input" type="checkbox" onclick="showPass()">
-							  <label class="form-check-label ms-1" for="flexCheckDefault">
-							    Mostrar Contraseña
-							  </label>
+							<div class="mb-3">
+								<label for="contraseña" class="form-label fw-bold">Contraseña</label>
+								<input type="password" class="form-control input-control" id="contraseña" required>
+								<input class="form-check-input" type="checkbox" onclick="showPass()">
+								<label class="form-check-label ms-1" for="flexCheckDefault">
+									Mostrar Contraseña
+								</label>
 							</div>
-							<div class="input-group mb-3">
-								<span class="input-group-text"><i class="fas fa-unlock-alt fa-lg text-color-secondary"></i></span>
-								<input type="password" class="form-control input-control" id="confirmarContraseña" placeholder="Confirmar contraseña" aria-label="Username">
+							<div class="text-center mx-5">
+								<input type="submit" class="btn btn-color-secondary text-white fw-bold container-fluid" value="Aceptar">
 							</div>
-							<input type="submit" class="btn btn-color-secondary text-white fw-bold px-5" value="Aceptar">
 						</form>
 					</div>
 				</div>
