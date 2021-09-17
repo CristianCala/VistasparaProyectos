@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+:root {
+	/*Paleta de colores*/
+	--dark-main: #110C28;
+	--primary-main: #5A45EA;
+	--secondary-main: #F13190;
+	--light-main: #A4AEFF;
+	--deeplight-main: #E0DADA;
+}
