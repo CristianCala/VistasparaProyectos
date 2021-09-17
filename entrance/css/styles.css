@@ -9,8 +9,45 @@
 :root {
 	/*Paleta de colores*/
 	--dark-main: #110C28;
-	--primary-main: #5A45EA;
 	--secondary-main: #F13190;
-	--light-main: #A4AEFF;
+	--light-main: #D1D6FE;
 	--deeplight-main: #E0DADA;
+}
+
+body{
+	font-family: 'Source Sans Pro';
+	background-image: url('../img/fondo.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: auto;
+	background-attachment: fixed;
+}
+
+.border-none{
+	border: none !important;
+}
+
+.form-control{
+	box-shadow: none !important;
+	border: 2px solid var(--secondary-main);
+}
+
+.form-control:focus{
+	border: none !important;
+	background-color: var(--light-main);
+}
+
+.btn-main{
+	background-color:  var(--secondary-main);
+	color: white;
+}
+
+.btn-main:hover{
+	background-color: white !important;
+	color: var(--secondary-main);
+	border: 2px solid var(--secondary-main);
+}
+
+.card{
+	box-shadow: 0 1rem 2rem var(--secondary-main)!important;
 }
