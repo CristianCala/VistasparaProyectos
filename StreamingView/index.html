@@ -9,7 +9,7 @@
 		<!-- MDB -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"/>
 		<!-- Fontawesome -->
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
@@ -18,7 +18,9 @@
 			<div class="container-fluid">
 				<a class="navbar-brand text-white ms-4" href="#">Vive<strong class="fw-bold">Streaming</strong></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="fas fa-bars text-white"></span>
+				<div class="bg-light-color rounded">
+					<span class="fas fa-bars text-color-main p-2"></span>
+				</div>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -33,10 +35,29 @@
 		<header class="vh-100">
 			<div class="container">
 				<h1 class="text-center display-4 fw-bolder">Reciente</h1>
-				<div class="text-center">
-					<div class="embed-responsive embed-responsive-21by9">
+				<div class="text-center m-5">
+					<div class="embed-responsive embed-responsive-21by9 shadow-lg">
 						<iframe class="embed-responsive-item rounded" src="..."></iframe>
 					</div>
+					<!-- Controls -->
+					<button
+					class="carousel-control-prev"
+					type="button"
+					data-mdb-target="#carouselBasicExample"
+					data-mdb-slide="prev"
+					>
+					<span class="fa-solid fa-caret-left fa-2x fa-beat text-color-main" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+					class="carousel-control-next"
+					type="button"
+					data-mdb-target="#carouselBasicExample"
+					data-mdb-slide="next"
+					>
+					<span class="fa-solid fa-caret-right fa-2x fa-beat text-color-main" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -69,13 +90,46 @@
 			<section class="bg-light-color container-fluid mt-4">
 				<div class="p-5">
 					<h1 class="text-dark text-start">Vive <strong>Streaming</strong></h1>
-					<p class="m-5 fst-italic"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti voluptatem repudiandae labore animi voluptatibus fugiat, obcaecati aliquid non repellendus aut inventore, sint optio, ullam tempore, quisquam explicabo similique error.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum libero laboriosam quae odit, temporibus nesciunt vel unde obcaecati perferendis at iste laborum necessitatibus officia ea molestias magnam eius omnis tenetur. </p>
+					<p class="m-5 fst-italic h5"> Disfruta ahora de la nueva plataforma <strong class="text-color-main fw-bold">streaming de vive</strong>  , ideal para traer toda nuestra programación cultural y educativa a las nuevas <strong class="text-color-main fw-bold">tecnologías de la información y comunicación</strong> para que así puedas explorar todo el contenido que tenemos y traemos para ti.</p>
 				</div>
 			</section>
 		</main>
-		<footer>
-			
+		<footer class="bg-main text-center text-lg-start">
+			<!-- Grid container -->
+			<div class="container p-4">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h3 class="text-white fw-bold mt-5">COVETEL</h3>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h3 class="text-white fw-bold mt-5">ViveTv</h3>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h3 class="text-white fw-bold mt-5">123tV</h3>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-white fw-bold">Siguenos</h4>
+						<ul class="list-unstyled d-flex pt-3">
+							<li class="mx-2">
+								<a href="#"><i class="fab fa-facebook-square fa-3x text-white"></i></a>
+							</li>
+							<li class="mx-2">
+								<a href="#"><i class="fab fa-instagram-square fa-3x text-white"></i></a>
+							</li>
+							<li class="mx-2">
+								<a href="#"><i class="fab fa-twitter-square fa-3x text-white"></i></a>
+							</li>
+							<li class="mx-2">
+								<a href="#"><i class="fab fa-youtube-square fa-3x text-white"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-center text-white p-3 fw-bold mt-4" style="background-color: rgba(0, 0, 0, 0.2);">
+				© 2021
+				<a class="text-white" href="https://vive.gob.ve/">www.vive.gob.ve</a>
+			</div>
 		</footer>
 		<!-- Bootstrap 5 Js -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
