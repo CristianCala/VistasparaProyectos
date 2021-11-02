@@ -16,7 +16,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-main shadow-lg">
 			<div class="container-fluid">
-				<a class="navbar-brand text-white ms-4" href="#">Vive<strong class="fw-bold">Streaming</strong></a>
+				<a class="navbar-brand text-dark ms-4 p py-0 bg-light fw-bold rounded" href="#">Vive <strong class="bg-danger rounded text-white px-2"> Streaming</strong></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="bg-light-color rounded">
 					<span class="fas fa-bars text-color-main p-2"></span>
@@ -32,32 +32,13 @@
 				</div>
 			</div>
 		</nav>
-		<header class="vh-100">
+		<header class="">
 			<div class="container">
 				<h1 class="text-center display-4 fw-bolder">Reciente</h1>
 				<div class="text-center m-5">
 					<div class="embed-responsive embed-responsive-21by9 shadow-lg">
 						<iframe class="embed-responsive-item rounded" src="..."></iframe>
 					</div>
-					<!-- Controls -->
-					<button
-					class="carousel-control-prev"
-					type="button"
-					data-mdb-target="#carouselBasicExample"
-					data-mdb-slide="prev"
-					>
-					<span class="fa-solid fa-caret-left fa-2x fa-beat text-color-main" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-					</button>
-					<button
-					class="carousel-control-next"
-					type="button"
-					data-mdb-target="#carouselBasicExample"
-					data-mdb-slide="next"
-					>
-					<span class="fa-solid fa-caret-right fa-2x fa-beat text-color-main" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-					</button>
 				</div>
 			</div>
 		</header>
@@ -89,8 +70,72 @@
 			</section>
 			<section class="bg-light-color container-fluid mt-4">
 				<div class="p-5">
-					<h1 class="text-dark text-start">Vive <strong>Streaming</strong></h1>
+					<h1 class="text-dark text-start display-6">Vive <strong class="fw-bold">Streaming</strong></h1>
 					<p class="m-5 fst-italic h5"> Disfruta ahora de la nueva plataforma <strong class="text-color-main fw-bold">streaming de vive</strong>  , ideal para traer toda nuestra programación cultural y educativa a las nuevas <strong class="text-color-main fw-bold">tecnologías de la información y comunicación</strong> para que así puedas explorar todo el contenido que tenemos y traemos para ti.</p>
+				</div>
+			</section>
+			<section class="bg-light container-fluid">
+				<h1 class="text-dark text-start display-6 m-5">Cartelera <strong class="fw-bold">Informativa</strong></h1>
+				<div class="container my-5">
+					<div class="row">
+						<div class="col">
+							<div class="card shadow-lg">
+							  <img
+							    src="http://www.vive.gob.ve/images/Noticias/Nacional/--------------TSJ-Nulidad.jpg"
+							    class="card-img-top"
+							    alt="..."
+							  />
+							  <div class="card-body">
+							    <h5 class="card-title">TSJ comprometió responsabilidad de tres diputados en desacato</h5>
+							    <p class="card-text mt-3 text-muted">
+							      Política
+							    </p>
+							    <p class="card-text fw-bold text-muted">
+							      13 Agosto 2019
+							    </p>
+							    <a href="#!" class="btn btn-outline-secondary">Más</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-lg">
+							  <img
+							    src="http://www.vive.gob.ve/images/home/lonuevo/banner-de-agosto-ciencia-ficcion.png"
+							    class="card-img-top"
+							    alt="..."
+							  />
+							  <div class="card-body">
+							    <h5 class="card-title">Vive un agosto de Ciencia-Ficción insuperable</h5>
+							    <p class="card-text mt-3 text-muted">
+							      Ciencias
+							    </p>
+							    <p class="card-text fw-bold text-muted">
+							      2 Agosto 2019
+							    </p>
+							    <a href="#!" class="btn btn-outline-secondary">Más</a>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-lg">
+							  <img
+							    src="http://www.vive.gob.ve/images/Noticias/Cultura/----------------------------------culturamincultura.JPG"
+							    class="card-img-top"
+							    alt="..."
+							  />
+							  <div class="card-body">
+							    <h5 class="card-title">IAEM continúa sus programaciones para el rescate de nuestra cultura</h5>
+							    <p class="card-text mt-3 text-muted">
+							      Arte y Cultura
+							    </p>
+							    <p class="card-text fw-bold text-muted">
+							      7 Agosto 2019
+							    </p>
+							    <a href="#!" class="btn btn-outline-secondary">Más</a>
+							  </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -132,7 +177,10 @@
 			</div>
 		</footer>
 		<!-- Bootstrap 5 Js -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<!-- Material Design Bootstrap 5 Js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+		></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
